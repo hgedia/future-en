@@ -372,7 +372,7 @@ select:focus-visible {
   /* Compact lang trigger on mobile: hide native label */
   .lang-native { display: none; }
   .lang-trigger { padding: 0 10px; gap: 6px; }
-  .lang-panel { right: 0; left: auto; min-width: 260px; max-width: calc(100vw - 1.25rem); }
+  .lang-panel { position: fixed; top: 72px; left: 0; right: 0; min-width: auto; max-width: none; }
   .lang-banner-text { min-width: 0; flex: 1 1 100%; order: 2; }
   .lang-banner-actions { flex-wrap: wrap; }
 }
