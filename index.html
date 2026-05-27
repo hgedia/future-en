@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.css?v=2" />
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -107,22 +107,87 @@
     </div>
 
     <!-- Who We Help -->
-    <section class="section section-alt" aria-labelledby="who-heading">
+    <section class="section section-alt who-section" aria-labelledby="who-heading">
       <div class="container">
-        <div class="text-center">
-          <span class="section-eyebrow" data-i18n="home_who_label">Who We Help</span>
-          <h2 class="section-title" id="who-heading" data-i18n="home_who_title">You are welcome here</h2>
-          <p class="section-subtitle" data-i18n="home_who_subtitle">We support anyone in need in our area, including:</p>
+
+        <div class="who-header">
+          <div>
+            <span class="section-eyebrow" data-i18n="home_who_label">Who We Help</span>
+            <h2 id="who-heading" class="who-h2">
+              You're <span class="who-h2-hl">welcome</span> here.
+            </h2>
+          </div>
+          <div class="who-header-side">
+            <p data-i18n="home_who_subtitle">We support anyone in need across North London — free, friendly, no judgement, whoever you are.</p>
+            <a href="contact.html" class="btn btn-ghost btn-sm">Get in touch →</a>
+          </div>
         </div>
-        <div class="who-grid" role="list">
-          <div class="who-item" role="listitem"><span data-i18n="home_who_1">Refugees and asylum seekers</span></div>
-          <div class="who-item" role="listitem"><span data-i18n="home_who_2">Undocumented migrants</span></div>
-          <div class="who-item" role="listitem"><span data-i18n="home_who_3">Congolese, Franco-African, Romanian, Polish &amp; Greek communities</span></div>
-          <div class="who-item" role="listitem"><span data-i18n="home_who_4">Black and Minority Ethnic (BME) people</span></div>
-          <div class="who-item" role="listitem"><span data-i18n="home_who_6">People feeling lonely or isolated</span></div>
-          <div class="who-item" role="listitem"><span data-i18n="home_who_7">Young people needing guidance</span></div>
+
+        <div class="who-tiles" role="list">
+
+          <div class="who-tile who-tile-red" role="listitem">
+            <span class="who-marker" aria-hidden="true"></span>
+            <div class="who-tile-body">
+              <h3 class="who-name" data-i18n="home_who_1">Refugees &amp; asylum seekers</h3>
+            </div>
+            <div class="who-shape" aria-hidden="true">
+              <svg viewBox="0 0 120 120" width="64" height="64"><path d="M60 6 C 90 6 114 30 114 60 C 114 88 92 108 64 114 C 36 120 14 102 8 76 C 2 50 18 24 42 12 C 48 9 54 6 60 6 Z" fill="#FFD166" stroke="#1D3557" stroke-width="2"/></svg>
+            </div>
+          </div>
+
+          <div class="who-tile who-tile-paper" role="listitem">
+            <span class="who-marker" aria-hidden="true"></span>
+            <div class="who-tile-body">
+              <h3 class="who-name" data-i18n="home_who_2">Immigrants &amp; migrants in distress</h3>
+            </div>
+          </div>
+
+          <div class="who-tile who-tile-butter" role="listitem">
+            <span class="who-marker" aria-hidden="true"></span>
+            <div class="who-tile-body">
+              <h3 class="who-name" data-i18n="home_who_3">Congolese, Franco-African, Romanian, Polish &amp; Greek communities</h3>
+            </div>
+            <div class="who-shape" aria-hidden="true">
+              <svg viewBox="0 0 120 120" width="64" height="64"><path d="M60 6 C 90 6 114 30 114 60 C 114 88 92 108 64 114 C 36 120 14 102 8 76 C 2 50 18 24 42 12 C 48 9 54 6 60 6 Z" fill="#E63946" stroke="#1D3557" stroke-width="2"/></svg>
+            </div>
+          </div>
+
+          <div class="who-tile who-tile-paper" role="listitem">
+            <span class="who-marker" aria-hidden="true"></span>
+            <div class="who-tile-body">
+              <h3 class="who-name" data-i18n="home_who_4">Black &amp; Minority Ethnic (BME) people</h3>
+            </div>
+          </div>
+
+          <div class="who-tile who-tile-mint" role="listitem">
+            <span class="who-marker" aria-hidden="true"></span>
+            <div class="who-tile-body">
+              <h3 class="who-name" data-i18n="home_who_6">People feeling lonely or isolated</h3>
+            </div>
+            <div class="who-shape" aria-hidden="true">
+              <svg viewBox="0 0 120 120" width="64" height="64"><path d="M60 6 C 90 6 114 30 114 60 C 114 88 92 108 64 114 C 36 120 14 102 8 76 C 2 50 18 24 42 12 C 48 9 54 6 60 6 Z" fill="#1D3557" stroke="#1D3557" stroke-width="2"/></svg>
+            </div>
+          </div>
+
+          <div class="who-tile who-tile-deep" role="listitem">
+            <span class="who-marker" aria-hidden="true"></span>
+            <div class="who-tile-body">
+              <h3 class="who-name" data-i18n="home_who_7">Young people needing guidance</h3>
+            </div>
+          </div>
+
         </div>
-        <p class="info-box mt-3" data-i18n="home_who_area">We cover: Haringey, Hackney, Waltham Forest and Islington.</p>
+
+        <div class="who-coverage" aria-label="Boroughs we cover">
+          <span class="who-coverage-label">We cover</span>
+          <div class="who-coverage-list">
+            <span class="who-coverage-item"><span class="who-dot" aria-hidden="true"></span>Haringey</span>
+            <span class="who-coverage-item"><span class="who-dot" aria-hidden="true"></span>Hackney</span>
+            <span class="who-coverage-item"><span class="who-dot" aria-hidden="true"></span>Waltham Forest</span>
+            <span class="who-coverage-item"><span class="who-dot" aria-hidden="true"></span>Islington</span>
+          </div>
+        </div>
+
       </div>
     </section>
 

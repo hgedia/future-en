@@ -58,9 +58,9 @@ const TRANSLATIONS = {
     /* ---- Home – who we help ---- */
     home_who_label:    "Who We Help",
     home_who_title:    "You are welcome here",
-    home_who_subtitle: "We support anyone in need in our area, including:",
-    home_who_1: "Refugees and asylum seekers",
-    home_who_2: "Immigrants and migrants in distress",
+    home_who_subtitle: "We support anyone in need across North London — free, friendly, no judgement, whoever you are.",
+    home_who_1: "Refugees & asylum seekers",
+    home_who_2: "Immigrants & migrants in distress",
     home_who_3: "Congolese, Franco-African, Romanian, Polish & Greek communities",
     home_who_4: "Black and Minority Ethnic (BME) people",
     home_who_6: "People feeling lonely or isolated",
