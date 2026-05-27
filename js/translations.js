@@ -80,7 +80,7 @@ const TRANSLATIONS = {
     events_drop_time:     "2:00 pm – 7:00 pm",
     events_drop_loc:      "Marcus Garvey Library, 1 Philip Lane, London, N15 4JA (First floor)",
     events_drop_desc:     "Come for advice, a friendly chat, sharing experiences or to find out about our services. No booking needed.",
-    events_workshop_title: "Community Workshops",
+    events_workshop_title: "Workshops",
     events_workshop_day:   "Every other Thursday (depending on demand)",
     events_workshop_time:  "2:00 pm – 7:00 pm",
     events_workshop_loc:   "Marcus Garvey Library, 1 Philip Lane, London, N15 4JA",
@@ -212,9 +212,9 @@ const TRANSLATIONS = {
     footer_copy:    "© 2026 Future Enlightenment. All rights reserved.",
 
     /* ---- Common ---- */
-    label_when:   "When:",
-    label_where:  "Where:",
-    label_time:   "Time:",
+    label_when:   "When",
+    label_where:  "Where",
+    label_time:   "Time",
     label_note:   "Note:",
   },
 
