@@ -486,10 +486,10 @@ select:focus-visible {
 }
 @media (max-width: 720px) {
   .stats-grid { grid-template-columns: 1fr 1fr; }
-  .stat-item { border-right: none; border-bottom: 2px solid var(--ink); }
+  .stat-item { border-right: none; border-bottom: 2px solid var(--ink); padding: 1.25rem 1rem; }
   .stat-item:nth-child(odd) { border-right: 2px solid var(--ink); }
   .stat-item:nth-last-child(-n+2) { border-bottom: none; }
-  .stat-number { font-size: 2rem; }
+  .stat-number { font-size: clamp(1.2rem, 5vw, 2rem); word-break: break-word; overflow-wrap: break-word; }
 }
 
 /* ==============================================
