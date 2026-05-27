@@ -38,7 +38,7 @@
 
 /* ---- RESET ---- */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; font-size: 20px; }
+html { scroll-behavior: smooth; font-size: 20px; overflow-x: hidden; }
 body {
   font-family: var(--font-b);
   background: var(--bg);
@@ -368,13 +368,16 @@ select:focus-visible {
   }
   .nav-link::after { display: none; }
   .nav-hamburger { display: inline-flex; }
-  .nav-left { gap: 0.75rem; }
+  .nav-left { gap: 0.75rem; flex-shrink: 1; min-width: 0; }
   /* Compact lang trigger on mobile: hide native label */
   .lang-native { display: none; }
   .lang-trigger { padding: 0 10px; gap: 6px; }
   .lang-panel { right: 0; left: auto; min-width: 260px; max-width: calc(100vw - 1.25rem); }
   .lang-banner-text { min-width: 0; flex: 1 1 100%; order: 2; }
   .lang-banner-actions { flex-wrap: wrap; }
+}
+@media (max-width: 540px) {
+  .brand-name-wrap { display: none; }
 }
 @media (max-width: 640px) {
   .main-nav { padding: 0 1.25rem; }
