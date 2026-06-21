@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this project is
 
-Static multi-page website for **Future Enlightenment**, a North London charity. No build step, no framework — plain HTML, CSS, and vanilla JS served directly from the repo root. The remote is `new-origin` (not `origin`): always push with `git push new-origin main`.
+Static multi-page website for **Future Enlightenment**, a North London charity. No build step, no framework — plain HTML, CSS, and vanilla JS served directly from the repo root. Push with `git push origin main`.
 
 ## Development
 
